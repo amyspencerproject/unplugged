@@ -87,6 +87,274 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ================ Base Header and Footer Styles and Flexbox ================ */
+
+body {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+main {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+  max-width: 90%;
+	margin: 0 auto;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/***** Header Styles *****/
+
+header {
+}
+
+h1 {}
+
+header .content-wrapper { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+header img {}
+
+header .header-divider {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+
+
+/***** Footer Styles *****/
+
+footer {}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.contact address {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.social-icons {
+ display: flex;
+ justify-content: space-around;
+ align-content: center;
+ flex-flow: row nowrap;
+ width: 50%;
+  
+}
+
+.copyright {}
+
+/* ================ Mobile Styles - Homepage ================ */
+
+/*** Base Element Styles ***/
+main {}
+h2 {}
+h3 {}
+p {}
+
+/*** Main Section Styles ***/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-area .content-wrapper {}
+
+.hero-area h1 {}
+
+
+/*** Newsletter Sign-up and Download ***/
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .content-wrapper {}
+
+.form-description {}
+
+.form {}
+
+/*** Features section w/ article divs, fontawesome icons ***/
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.features .content-wrapper {}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+}
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.fontawesome-icon {}
+
+.features-items-description {}
+
+
+/*** Reviews section ***/
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reviews .content-wrapper {}
+
+.reviews img {}
+
+
+
+/* ================ Mobile Styles - About page ================ */
+
+/*** Mission statement section ***/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission .content-wrapper {}
+
+.mission-content {}
+
+/***Embedded Map***/
+
+.map {}
+
+.map figure {}
+
+/*** Contact Section ***/
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .content-wrapper {}
+
+.contact-content {}
+
+.contact-content div {}
+
+.contact-section address {}
+
+
+/* ================ Mobile Styles - FAQ page ================ */
+
+/*** faq section, each QnA a seperate but identidcally named div ***/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.faq-content {
+  
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
