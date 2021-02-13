@@ -87,7 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ================ Base Header and Footer Styles and Flexbox ================ */
+/* ===================== Base Element Styles =========================== */
+.content-wrapper {
+  width: 90%; /** Contains all content with a margin of 10%. Exceptions are background images and embedded map **/
+}
+h2 {}
+h3 {}
+p {}
+
+
+/* ================ Header and Footer Styles and Flexbox ================ */
 
 body {
   display: flex;
@@ -102,8 +111,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-  max-width: 90%;
-	margin: 0 auto;
+  width: 100%;
 }
 
 header,
@@ -113,12 +121,12 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  margin: 0 auto;
 }
 
 /***** Header Styles *****/
 
 header {
+  padding: 15px;
 }
 
 h1 {}
@@ -128,10 +136,18 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  margin: 0;
+}
+header a {
+  margin: 0; /* attempt to remove margin on logo image*/
 }
 
-header img {}
+header img {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-right: 0; /* attempt to remove margin on logo image*/
+  }
 
 header .header-divider {
   width: 100%;
@@ -141,14 +157,15 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
+  width: 70%;
+ }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 75%;
+  padding: 0;
 }
 
 header nav ul li {
@@ -170,7 +187,11 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  width: 100%;
+  width: 63%;
+}
+
+footer p {
+  margin: 0;
 }
 
 .footer-content {
@@ -210,15 +231,12 @@ footer .content-wrapper {
   
 }
 
-.copyright {}
+.copyright {
+  margin-bottom: 10px;
+}
 
 /* ================ Mobile Styles - Homepage ================ */
 
-/*** Base Element Styles ***/
-main {}
-h2 {}
-h3 {}
-p {}
 
 /*** Main Section Styles ***/
 
@@ -231,7 +249,9 @@ p {}
 
 .hero-area .content-wrapper {}
 
-.hero-area h1 {}
+.hero-area h1 {
+  width: 90%;
+}
 
 
 /*** Newsletter Sign-up and Download ***/
@@ -256,6 +276,14 @@ aside .content-wrapper {}
   width: 100%;
 }
 
+.features p {
+  margin: 0;
+}
+
+.features h2 {
+  width: 90%;
+}
+
 .features .content-wrapper {}
 
 .features-items {
@@ -271,6 +299,7 @@ aside .content-wrapper {}
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  width: 63%;
 }
 
 .fontawesome-icon {}
@@ -288,6 +317,9 @@ aside .content-wrapper {}
 }
 
 .reviews .content-wrapper {}
+.reviews h3 {
+  width: 55%;
+}
 
 .reviews img {}
 
@@ -346,7 +378,6 @@ aside .content-wrapper {}
   justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
-  width: 100%;
 }
 
 .faq-content {
