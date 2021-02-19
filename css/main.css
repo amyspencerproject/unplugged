@@ -489,21 +489,120 @@ aside .content-wrapper {}
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
+   These queries override the primary ('mobile first') styles.
+   Using two breakpoints, 768px for tablets and 1200px for desktop
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* ========================== TABLET STYLES ============================= */ 
+   @media only screen and (min-width: 768px) {
+  /* header */
+
+  header .content-wrapper { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 0;
+  }
+
+  /* hero-area */
+  
+  /* aside-area */
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-description {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 50%;
+  }
+
+
+  /* features */
+  .features-items {
+    width: 100%;
+  }
+  
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 40%;
+    padding: 0.63em;
+    height: 12em;
+  }
+
+  .features-item-description {
+    margin: 0;
+    padding: 0 2.5rem;
+  }
+
+ 
+
+  /* reviews */
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    width: 100%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  .reviews article div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    flex-basis: 40%;
+  }
+
+  .reviews h3 {
+    width: auto;
+  }
+
+  /* footer */
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-bottom: 0em;
+  }
+
+  footer .contact, 
+  footer .social {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* ========================== DESTKTOP STYLES ============================= */ 
+@media only screen and (min-width: 1200px) {
+  /* desktop styles */
+  header {}
 }
+
 
 /* ==========================================================================
    Print styles.
