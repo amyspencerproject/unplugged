@@ -497,7 +497,10 @@ aside .content-wrapper {}
 
 /* ========================== TABLET STYLES ============================= */ 
    @media only screen and (min-width: 768px) {
-  /* header */
+  
+    /* ========================= Base Styles ========================= */
+
+    /* header */
 
   header .content-wrapper { 
     display: flex;
@@ -507,6 +510,24 @@ aside .content-wrapper {}
     margin: 0;
   }
 
+  /* footer */
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-bottom: 0em;
+  }
+
+  footer .contact, 
+  footer .social {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  /* ========================= Home Page ========================= */
   /* hero-area */
   
   /* aside-area */
@@ -522,7 +543,6 @@ aside .content-wrapper {}
     flex-flow: column nowrap;
     flex-basis: 50%;
   }
-
 
   /* features */
   .features-items {
@@ -543,8 +563,6 @@ aside .content-wrapper {}
     margin: 0;
     padding: 0 2.5rem;
   }
-
- 
 
   /* reviews */
 
@@ -576,22 +594,49 @@ aside .content-wrapper {}
   .reviews h3 {
     width: auto;
   }
+  
+  /* ========================= FAQ Page ========================= */
 
-  /* footer */
-
-  .footer-content {
+  .faq .content-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+  
+  .faq h2 {
     width: 100%;
-    margin-bottom: 0em;
   }
 
-  footer .contact, 
-  footer .social {
+  .faq-content {
     display: flex;
-    flex-basis: 50%;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    flex-basis: 45%;
+  }
+
+  .faq p {
+    padding-right: 20px;
+  }
+
+
+  /* ========================= About Page ========================= */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
 
