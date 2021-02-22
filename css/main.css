@@ -538,10 +538,10 @@ aside .content-wrapper {}
     align-items: center;
   }
 
-  .form-description {
-    display: flex;
-    flex-flow: column nowrap;
-    flex-basis: 50%;
+  aside .content-wrapper .form-description,
+  aside .contnet-wrapper .form-description {
+    width: 40%;
+    margin: 0;
   }
 
   /* features */
@@ -553,9 +553,8 @@ aside .content-wrapper {}
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 40%;
-    padding: 0.63em;
     height: 12em;
   }
 
@@ -566,12 +565,6 @@ aside .content-wrapper {}
 
   /* reviews */
 
-  .reviews .content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
   .reviews h2 {
     width: 100%;
   }
@@ -579,22 +572,12 @@ aside .content-wrapper {}
   .reviews article {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-flow: row nowrap;
   }
 
   .reviews article div {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-flow: row wrap;
-    flex-basis: 40%;
+    width: 40%;
   }
-
-  .reviews h3 {
-    width: auto;
-  }
-  
+    
   /* ========================= FAQ Page ========================= */
 
   .faq .content-wrapper {
@@ -644,8 +627,56 @@ aside .content-wrapper {}
 
 /* ========================== DESTKTOP STYLES ============================= */ 
 @media only screen and (min-width: 1200px) {
-  /* desktop styles */
-  header {}
+ /* ========================= Base Styles ========================= */
+  
+  .content-wrapper {
+    max-width: 960px; /** Contains all content in a 960px width container despite the screen getting larger. Exceptions are background images and embedded map **/
+    margin: 3em 0;
+  }
+  
+
+
+/* ========================= Home Page ========================= */
+  /* hero-area */
+
+  .hero-area h1 {
+    font-size: 3.75rem;
+    width: 60%;
+  }
+
+  /* aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+
+  /* features */
+
+  .features article {
+    width: 100%;
+    margin: 0;
+    flex-basis: 33%;
+  }
+
+  
+  /* reviews */
+
+  .reviews .content-wrapper article {
+    flex-flow: row wrap;
+  }
+
+
+  /* ========================= About Page ========================= */
+
+
+  /* ========================= FAQ Page ========================= */
+
+
 }
 
 
