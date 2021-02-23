@@ -112,7 +112,9 @@ a {
 }
 
 h1 {
+  font-family: 'Poppins' Arial, Helvetica, sans-serif;
   font-size: 3.75em;
+  font-weight: 500;
 }
 
 h2 {
@@ -135,6 +137,7 @@ p {
 }
  
 img {
+  width: 100%;
  
 }
  
@@ -292,11 +295,16 @@ footer .copyright {
 /*** Main Section Styles ***/
 
 .hero-area {
+  background: url('../img/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  height: auto;
 }
 
 .hero-area .content-wrapper {}
@@ -346,6 +354,10 @@ input[type=button] {
 /*** Features section w/ article divs, fontawesome icons ***/
 
 .features {
+  background: url('../img/features.jpg') #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
