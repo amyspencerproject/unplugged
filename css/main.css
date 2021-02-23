@@ -87,15 +87,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ===================== Base Element Styles =========================== */
+/* ===================== Base Styles =========================== */
+
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open-sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+ }
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.3;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.88rem;
+}
+ 
+p {
+	font-size: 1.13rem;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-style: normal;
+ 
+}
+ 
 .content-wrapper {
   width: 90%; /** Contains all content with a margin of 10%. Exceptions are background images and embedded map **/
   margin: 3em 0;
 }
-h2 {}
-h3 {}
-p {}
-
 
 /* ================ Header and Footer Styles and Flexbox ================ */
 
@@ -168,15 +218,6 @@ header nav ul {
   width: 100%; /* also used 75% not sure which looks best*/
   padding: 0;
 }
-
-header nav ul li {
-  list-style-type: none;
-}
-
-header nav ul li a {
-  text-decoration: none;
-}
-
 
 
 /***** Footer Styles *****/
@@ -641,7 +682,7 @@ aside .content-wrapper {}
 
   .hero-area h1 {
     font-size: 3.75rem;
-    width: 60%;
+    width: 75%;
   }
 
   /* aside */
