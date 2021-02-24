@@ -446,7 +446,7 @@ input[type=button] {
 
 .map figure {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 125%;
   height: 0;
   overflow: hidden;
 }
@@ -786,7 +786,8 @@ input[type=button] {
     align-items: flex-start;
   }
 
-
+  .map figure {
+    padding-bottom: 50%;
 }
 
 /* ========================== DESTKTOP STYLES ============================= */ 
@@ -890,6 +891,10 @@ input[type=button] {
 
 
   /* ========================= About Page ========================= */
+
+  .map figure {
+    padding-bottom: 35%;
+}
 
 
   /* ========================= FAQ Page ========================= */
