@@ -104,6 +104,7 @@ ul,
 ol {
   font-weight: bold;
   list-style-type: none;
+  text-transform: uppercase;
  }
  
 a {
@@ -112,14 +113,14 @@ a {
 }
 
 h1 {
-  font-family: 'Poppins' Arial, Helvetica, sans-serif;
-  font-size: 3.75em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
   font-weight: 500;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 1.88em;
   line-height: 1.3;
   font-weight: normal;
 }
@@ -127,12 +128,12 @@ h2 {
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88em;
+  font-size: 1.13em;
   font-weight: normal;
 }
  
 p {
-	font-size: 1.13em;
+	font-size: 0.88em;
   line-height: 1.3;
 }
  
@@ -142,6 +143,7 @@ img {
 }
  
 figure {
+  margin: 0;
  
 }
  
@@ -152,7 +154,7 @@ address {
  
 .content-wrapper {
   width: 90%; /** Contains all content with a margin of 10%. Exceptions are background images and embedded map **/
-  margin: 3em 0;
+  margin: 50px 0;
 }
 
 /* ================ Header and Footer Styles and Flexbox ================ */
@@ -200,17 +202,19 @@ header a {
   margin: 0; /* attempt to remove margin on logo image*/
 }
 
-header img {
+header figure {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 70%;
-  margin-right: 0; /* attempt to remove margin on logo image*/
   }
 
-header .header-divider {
+.header-divider {
+  background: #3a3a3a; 
+  height: 1px;
   width: 100%;
-  height: 0.06em;
-  margin: 0.63em 0 1.26em 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -226,6 +230,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%; /* also used 75% not sure which looks best*/
   padding: 0;
+  margin: 0;
 }
 
 
@@ -274,7 +279,6 @@ footer .social {
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
-  margin-bottom: 3em;
 }
 
 footer .social-icons {
@@ -295,22 +299,22 @@ footer .copyright {
 /*** Main Section Styles ***/
 
 .hero-area {
-  background: url('../img/hero.jpg');
+  background: url('../img/hero.jpg') no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-color: #333;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 100%;
-  height: auto;
+  min-height: 500px;
 }
 
-.hero-area .content-wrapper {}
+.hero-area .content-wrapper {
+  margin-top: 0;
+}
 
 .hero-area h1 {
-  width: 90%; /* reduced width got 3 line returns exact with design comp*/
+  width: 100%; 
 }
 
 
@@ -323,11 +327,10 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {}
+aside .content-wrapper {
+  margin-top: 30px;
+}
 
-.form-description {}
-
-.form {}
 
 input[type=text] {
   box-sizing: border-box;
@@ -369,7 +372,7 @@ input[type=button] {
 }
 
 .features h2 {
-  width: 90%; /* reduced width got 3 line returns exact with design comp*/
+  width: 95%; /* reduced width got 3 line returns exact with design comp*/
   margin-bottom: 2em;
 }
 
@@ -592,12 +595,42 @@ input[type=button] {
 
   header .content-wrapper { 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
     margin: 0;
   }
 
+  .header-divider {
+    display: none;
+  }
+
+  header figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 25%;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 70%;
+     }
+    
+    header nav ul {
+      display: flex;
+      justify-content: space-around;
+      width: 40%; /* also used 75% not sure which looks best*/
+      padding: 0;
+      margin: 0;
+      font-size: 1em;
+    }
+
+    
   /* footer */
 
   .footer-content {
@@ -609,6 +642,10 @@ input[type=button] {
     margin-bottom: 0em;
   }
 
+  .footer-content h3 {
+    font-size: 1.5em;
+  }
+
   footer .contact, 
   footer .social {
     display: flex;
@@ -617,22 +654,39 @@ input[type=button] {
 
   /* ========================= Home Page ========================= */
   /* hero-area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    width: 80%;
+    min-height: 600px;
+  }
   
   /* aside-area */
 
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  aside .content-wrapper .form-description,
-  aside .contnet-wrapper .form-description {
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
     width: 40%;
     margin: 0;
   }
 
+  aside .content-wrapper h3 {
+    font-size: 1.5em;
+  }
+
+
   /* features */
+
+  .features .content-wrapper h2 {
+    font-size: 2.25em;
+  }
+
   .features-items {
     width: 100%;
   }
@@ -654,7 +708,18 @@ input[type=button] {
   /* reviews */
 
   .reviews h2 {
+    font-size: 2.25em;
     width: 100%;
+  }
+
+  .reviews figure,
+  .reviews article div {
+    width: 48%;
+  }
+
+  .reviews h3 {
+    font-size: 1.5em;
+    margin: 0;
   }
 
   .reviews article {
@@ -662,10 +727,7 @@ input[type=button] {
     justify-content: space-around;
   }
 
-  .reviews article div {
-    width: 40%;
-  }
-    
+       
   /* ========================= FAQ Page ========================= */
 
   .faq .content-wrapper {
@@ -719,12 +781,37 @@ input[type=button] {
   
   .content-wrapper {
     max-width: 960px; /** Contains all content in a 960px width container despite the screen getting larger. Exceptions are background images and embedded map **/
-    margin: 3em 0;
+    margin: 50px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.88em;
+  }
+
+  p {
+      font-size: 1.13em;
+      line-height: 1.3;
   }
   
 
 
 /* ========================= Home Page ========================= */
+
+  /* header */
+  
+  header figure {
+    width: 30%;
+  }
+  
+  header nav ul {
+    font-size: 1.13em;
+  }
+
   /* hero-area */
 
   .hero-area h1 {
@@ -737,9 +824,19 @@ input[type=button] {
     justify-content: space-around;
   }
 
-  aside .content-wrapper .form-description,
+
+  aside .content-wrapper .form-description, 
   aside .content-wrapper .form {
     width: 30%;
+    margin: 0;
+  }
+
+  aside .content-wrapper h3 {
+    font-size: 1.88em;
+  }
+
+  aside .content-wrapper p {
+    font-size: 1.13em;
   }
 
 
@@ -756,6 +853,25 @@ input[type=button] {
 
   .reviews .content-wrapper article {
     flex-flow: row wrap;
+  }
+
+  .reviews article div {
+    width: 43%;
+  }
+
+  .reviews h2 {
+    font-size: 2.25em;
+  }
+
+  .reviews h3 {
+    font-size: 1.88em;
+    width: 75%;
+  }
+
+  /* footer */
+  
+  footer h3 {
+    font-size: 1.88em;
   }
 
 
