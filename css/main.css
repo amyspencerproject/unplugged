@@ -299,7 +299,7 @@ footer .copyright {
 /*** Main Section Styles ***/
 
 .hero-area {
-  background: url('../img/hero.jpg') no-repeat;
+  background: url('../img/mobile-hero.png') no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #333;
@@ -391,7 +391,15 @@ input[type=button] {
   margin: 1.26em;
 }
 
-.fontawesome-icon {}
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.features p {
+  text-align: center;
+}
 
 .features-item-description {
   text-align: center;
@@ -669,6 +677,18 @@ input[type=button] {
   /* ========================= Home Page ========================= */
   /* hero-area */
 
+  .hero-area {
+    background: url('../img/hero.jpg') no-repeat;
+    background-position: center;
+  background-size: cover;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  min-height: 500px;
+}
+
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1.5em;
@@ -712,6 +732,12 @@ input[type=button] {
     flex-flow: column wrap;
     flex-basis: 40%;
     height: 12em;
+  }
+
+  .features i {
+    font-size: 5em;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   .features-item-description {
@@ -857,14 +883,29 @@ input[type=button] {
 
   /* features */
 
+  .features .content-wrapper {
+    margin-bottom: 100px;
+  }
+
   .features article {
-    width: 100%;
-    margin: 0;
+    margin: 100px 0;
+    justify-content: space-between;
+    flex-flow: column nowrap;
     flex-basis: 33%;
   }
 
-  
+  .features i {
+    font-size: 7em;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+    
   /* reviews */
+
+  .reviews .content-wrapper {
+    margin: 100px 0;
+  }
 
   .reviews .content-wrapper article {
     flex-flow: row wrap;
