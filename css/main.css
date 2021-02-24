@@ -237,15 +237,13 @@ header nav ul {
 /***** Footer Styles *****/
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
 footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: 63%;
+  width: 55%;
+  margin: 50px;
 }
 
 footer p {
@@ -261,31 +259,33 @@ footer p {
 }
 
 footer .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 50px;
 }
 
 footer .contact address {
   text-align: center;
 }
 
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: 100%;
-}
 
 footer .social-icons {
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-content: center;
- width: 50%;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -655,31 +655,37 @@ input[type=button] {
     
   /* footer */
 
-  .footer-content {
+  
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 50px 0;
+  }
+
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-flow: row nowrap;
-    width: 100%;
-    margin-bottom: 0em;
+    align-items: flex-start;
+    flex-direction: row;
   }
 
   .footer-content h3 {
     font-size: 1.5em;
   }
 
-  footer .contact, 
-  footer .social {
-    display: flex;
-    flex-basis: 50%;
+
+  footer .social-icons {
+    justify-content: space-between;
   }
+
+
 
   /* ========================= Home Page ========================= */
   /* hero-area */
 
   .hero-area {
-    background: url('../img/hero.jpg') no-repeat;
-    background-position: center;
+  background: url('../img/hero.jpg') no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: #333;
   display: flex;
