@@ -139,17 +139,14 @@ p {
  
 img {
   width: 100%;
- 
 }
  
 figure {
   margin: 0;
- 
 }
  
 address {
   font-style: normal;
- 
 }
  
 .content-wrapper {
@@ -208,7 +205,7 @@ header figure {
   align-items: center;
   flex-flow: row wrap;
   width: 70%;
-  }
+}
 
 .header-divider {
   background: #3a3a3a; 
@@ -383,7 +380,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 .features article {
@@ -420,15 +416,10 @@ input[type=button] {
   margin-bottom: 2em;
 }
 
-.reviews .content-wrapper {}
-
 .reviews h3 {
   width: 55%;
   margin: 1.26em 0;
 }
-
-.reviews img {}
-
 
 
 /* ================ Mobile Styles - About page ================ */
@@ -444,13 +435,7 @@ input[type=button] {
   /* the content-wrapper has a 3em top-bottom margin*/ 
 }
 
-.mission .content-wrapper {}
-
-.mission-content {}
-
-/***Embedded Map***/
-
-
+/*** iframe Embedded Map***/
 
 .map figure {
   position: relative;
@@ -476,17 +461,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* the content-wrapper has a 3em top-bottom margin*/
 }
-
-.contact-section .content-wrapper {}
-
-.contact-content {}
-
-.contact-content div {}
-
-.contact-section address {}
-
 
 /* ================ Mobile Styles - FAQ page ================ */
 
@@ -506,7 +481,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: ;
 }
 
 .faq h2 {
@@ -516,8 +490,6 @@ input[type=button] {
 .faq-content {
   margin-bottom: 3em;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -610,11 +582,8 @@ input[type=button] {
 
 /* ========================== TABLET STYLES ============================= */ 
    @media only screen and (min-width: 768px) {
-  
-    /* ========================= Base Styles ========================= */
-
+    
     /* header */
-
   header .content-wrapper { 
     display: flex;
     justify-content: space-between;
@@ -652,10 +621,7 @@ input[type=button] {
       font-size: 1em;
     }
 
-    
   /* footer */
-
-  
 
   footer .content-wrapper {
     width: 65%;
@@ -673,12 +639,9 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-
   footer .social-icons {
     justify-content: space-between;
   }
-
-
 
   /* ========================= Home Page ========================= */
   /* hero-area */
@@ -693,7 +656,6 @@ input[type=button] {
   flex-flow: row wrap;
   min-height: 500px;
 }
-
 
   .hero-area h1 {
     font-size: 3em;
@@ -719,7 +681,6 @@ input[type=button] {
   aside .content-wrapper h3 {
     font-size: 1.5em;
   }
-
 
   /* features */
 
@@ -773,7 +734,6 @@ input[type=button] {
     justify-content: space-around;
   }
 
-       
   /* ========================= FAQ Page ========================= */
 
   .faq .content-wrapper {
@@ -798,7 +758,6 @@ input[type=button] {
   .faq p {
     padding-right: 20px;
   }
-
 
   /* ========================= About Page ========================= */
 
@@ -844,11 +803,7 @@ input[type=button] {
       font-size: 1.13em;
       line-height: 1.3;
   }
-  
-
-
-/* ========================= Home Page ========================= */
-
+ 
   /* header */
   
   header figure {
@@ -859,6 +814,13 @@ input[type=button] {
     font-size: 1.13em;
   }
 
+  /* footer */
+  
+  footer h3 {
+    font-size: 1.88em;
+  }
+
+/* ========================= Home Page ========================= */
   /* hero-area */
 
   .hero-area h1 {
@@ -870,7 +832,6 @@ input[type=button] {
   aside .content-wrapper {
     justify-content: space-around;
   }
-
 
   aside .content-wrapper .form-description, 
   aside .content-wrapper .form {
@@ -885,7 +846,6 @@ input[type=button] {
   aside .content-wrapper p {
     font-size: 1.13em;
   }
-
 
   /* features */
 
@@ -906,7 +866,6 @@ input[type=button] {
     text-align: center;
   }
 
-    
   /* reviews */
 
   .reviews .content-wrapper {
@@ -930,19 +889,12 @@ input[type=button] {
     width: 75%;
   }
 
-  /* footer */
-  
-  footer h3 {
-    font-size: 1.88em;
-  }
-
 
   /* ========================= About Page ========================= */
 
   .map figure {
     padding-bottom: 35%;
-}
-
+  }
 
   /* ========================= FAQ Page ========================= */
 
@@ -1024,4 +976,3 @@ input[type=button] {
     page-break-after: avoid;
   }
 }
-
